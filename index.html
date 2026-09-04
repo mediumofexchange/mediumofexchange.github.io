@@ -255,11 +255,16 @@ footer a { color: var(--muted); }
 <ul class="docs">
   <li>
     <a class="t" href="https://github.com/mediumofexchange/reference-ts">reference-ts<span class="tag">typescript</span></a>
-    <span class="d">The transparent setting: encoding, issuance, swaps, sequencing, presentation, dishonour, succession, recovery. 784 tests, one file per invariant.</span>
+    <span class="d">The transparent setting: encoding, issuance, swaps, sequencing, presentation, dishonour, succession, recovery, and invariant tests.</span>
   </li>
 </ul>
-<pre class="cmd"><code>npm install @mediumofexchange/reference@next</code></pre>
-<p class="warn">Early, and the API moves &mdash; hence the <code>next</code> tag. The wire format is not stable. Nothing here has been deployed, audited, or used for anything that matters.</p>
+<p class="note">The package is not published to npm. Build from source with Node.js 20 or newer:</p>
+<pre class="cmd"><code>git clone https://github.com/mediumofexchange/reference-ts.git
+cd reference-ts
+npm ci
+npm run check</code></pre>
+<p class="note">With Node.js 24, <code>npm run pilot:demo</code> exercises the optional <a href="https://github.com/mediumofexchange/reference-ts/blob/main/docs/PILOT.md">local payment pilot</a>, including restart and retries. Its witness is local and trusted.</p>
+<p class="warn">The reference implementation and pilot are experimental. The API and wire format can change, and there has been no completed security audit.</p>
 
 <hr>
 
@@ -272,7 +277,7 @@ footer a { color: var(--muted); }
 
 <footer>
   <p>Concentration will still happen, and large backers and banks will grow back. What goes is the legal moat. A village, a supply chain or a trade association can run its own money alongside the established one.</p>
-  <p><strong>None of it has been built yet.</strong></p>
+  <p>The transparent reference implementation is being built toward that goal.</p>
   <p style="margin-top:1.5rem">CC0 1.0 Universal &mdash; public domain dedication. &middot; <a href="https://github.com/mediumofexchange">github.com/mediumofexchange</a></p>
 </footer>
 
