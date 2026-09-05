@@ -245,7 +245,7 @@ footer a { color: var(--muted); }
   </li>
   <li>
     <a class="t" href="https://github.com/mediumofexchange/money-from-first-principles/blob/main/extensions.md">Extensions<span class="tag">profiles</span></a>
-    <span class="d">What need builds on the core: triggers, pro-rata, references, unitload, the Chaumian profile. Each with the need that summons it and the price it charges.</span>
+    <span class="d">What need builds on the core &mdash; triggers, pro-rata, references, unitload, cross-operator presentation &mdash; and the claim-layer profiles that replace the pool: transparent, accumulator, Chaumian, offline. Each with the need that summons it and the price it charges.</span>
   </li>
 </ul>
 
@@ -255,7 +255,7 @@ footer a { color: var(--muted); }
 <ul class="docs">
   <li>
     <a class="t" href="https://github.com/mediumofexchange/reference-ts">reference-ts<span class="tag">typescript</span></a>
-    <span class="d">The transparent setting: encoding, issuance, swaps, sequencing, presentation, dishonour, succession, recovery, and invariant tests.</span>
+    <span class="d">Canonical encoding, commitments, sequencing, presentation, dishonour, succession and recovery, one test file per invariant; a real-proof experiment for the shielded pool; a frozen transparent path kept as an oracle.</span>
   </li>
 </ul>
 <p class="note">The package is not published to npm. Build from source with Node.js 20 or newer:</p>
@@ -263,7 +263,7 @@ footer a { color: var(--muted); }
 cd reference-ts
 npm ci
 npm run check</code></pre>
-<p class="note">With Node.js 24, <code>npm run pilot:demo</code> exercises the optional <a href="https://github.com/mediumofexchange/reference-ts/blob/main/docs/PILOT.md">local payment pilot</a>, including restart and retries. Its witness is local and trusted.</p>
+<p class="note">With Node.js 24, <code>npm run pilot:demo</code> runs the <a href="https://github.com/mediumofexchange/reference-ts/blob/main/docs/PILOT.md">local pilot</a> on the transparent path across two processes, with restart and retries; its witness is local and trusted. It is an integration harness, not a product.</p>
 <p class="warn">The reference implementation and pilot are experimental. The API and wire format can change, and there has been no completed security audit.</p>
 
 <hr>
@@ -277,7 +277,7 @@ npm run check</code></pre>
 
 <footer>
   <p>Concentration will still happen, and large backers and banks will grow back. What goes is the legal moat. A village, a supply chain or a trade association can run its own money alongside the established one.</p>
-  <p>The transparent reference implementation is being built toward that goal.</p>
+  <p>The reference implementation is being built toward that goal: the shielded pool first, rule by rule from Construction.</p>
   <p style="margin-top:1.5rem">CC0 1.0 Universal &mdash; public domain dedication. &middot; <a href="https://github.com/mediumofexchange">github.com/mediumofexchange</a></p>
 </footer>
 
