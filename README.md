@@ -6,7 +6,7 @@ The front door for the **Medium of Exchange Protocol**, served at
 One static page, no build step, no dependencies. `index.html` is the whole
 site; `.nojekyll` tells GitHub Pages to serve it as-is.
 
-It links out to the three things behind it:
+It links to the protocol and implementation:
 
 | | |
 |---|---|

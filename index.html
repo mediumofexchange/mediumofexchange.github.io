@@ -159,18 +159,6 @@ code, kbd {
   padding: .12em .38em;
   border-radius: 3px;
 }
-pre.cmd {
-  background: var(--code-bg);
-  border: 1px solid var(--rule);
-  border-radius: 6px;
-  padding: .85rem 1.1rem;
-  overflow-x: auto;
-  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
-  font-size: .84rem;
-  margin: 0 0 .9rem;
-}
-pre.cmd code { background: none; padding: 0; font-size: inherit; }
-
 .names { max-width: var(--measure); margin: 0; padding: 0; list-style: none; }
 .names li { margin: 0 0 1rem; color: var(--muted); }
 .names b { color: var(--fg); font-weight: 600; }
@@ -255,15 +243,10 @@ footer a { color: var(--muted); }
 <ul class="docs">
   <li>
     <a class="t" href="https://github.com/mediumofexchange/reference-ts">reference-ts<span class="tag">typescript</span></a>
-    <span class="d">Canonical encoding, commitments, sequencing, presentation, dishonour, succession and recovery, one test file per invariant; a real-proof experiment for the shielded pool; a frozen transparent path kept as an oracle.</span>
+    <span class="d">The experimental shielded-pool implementation: private notes, public supply replay, canonical history, receipt readers and durable sequencing. Recovery is modeled; the wallet and external witness write side remain to be built.</span>
   </li>
 </ul>
-<p class="note">The package is not published to npm. Build from source with Node.js 20 or newer:</p>
-<pre class="cmd"><code>git clone https://github.com/mediumofexchange/reference-ts.git
-cd reference-ts
-npm ci
-npm run check</code></pre>
-<p class="note">With Node.js 24, <code>npm run pilot:demo</code> runs the <a href="https://github.com/mediumofexchange/reference-ts/blob/main/docs/PILOT.md">local pilot</a> on the transparent path across two processes, with restart and retries; its witness is local and trusted. It is an integration harness, not a product.</p>
+<p class="note">Build from source using the <a href="https://github.com/mediumofexchange/reference-ts#readme">setup and verification instructions</a>. The package is not published to npm. The <a href="https://github.com/mediumofexchange/reference-ts/blob/main/docs/PILOT.md">local pilot</a> remains a transparent-path integration harness with a trusted local witness.</p>
 <p class="warn">The reference implementation and pilot are experimental. The API and wire format can change, and there has been no completed security audit.</p>
 
 <hr>
