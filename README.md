@@ -1,20 +1,28 @@
-# mediumofexchange.github.io
+# Medium of Exchange website
 
-The front door for the **Medium of Exchange Protocol**, served at
-[mediumofexchange.org](https://mediumofexchange.org).
+Source for [mediumofexchange.org](https://mediumofexchange.org), the project
+overview linking the paper, protocol specification and TypeScript reference.
 
-One static page, no build step, no dependencies. `index.html` is the whole
-site; `.nojekyll` tells GitHub Pages to serve it as-is.
+This repository contains a static HTML page with inline styles, no dependencies
+and no build step.
 
-It links to the protocol and implementation:
-
-| | |
+| File | Purpose |
 |---|---|
-| **[money-from-first-principles](https://github.com/mediumofexchange/money-from-first-principles)** | The paper, and the protocol — Construction and Extensions. |
-| **[reference-ts](https://github.com/mediumofexchange/reference-ts)** | The TypeScript reference implementation. |
+| [index.html](index.html) | Page content and styles. Open locally to preview. |
+| [CNAME](CNAME) | Custom domain used by GitHub Pages. |
+| [.nojekyll](.nojekyll) | Serves the files without Jekyll processing. |
 
-Edit `index.html` and push; Pages redeploys from `main`.
+## Editing
+
+Keep the overview concise and link detailed implementation status to
+[reference-ts](https://github.com/mediumofexchange/reference-ts). The paper and
+normative protocol live in
+[money-from-first-principles](https://github.com/mediumofexchange/money-from-first-principles).
+
+Preview changes locally and check links before publishing. GitHub Pages serves
+the `main` branch; pushing there publishes the site and requires deployment
+authorization under the workspace rules.
 
 ## Licence
 
-CC0 1.0 Universal — public domain dedication, matching everything else here.
+[CC0 1.0 Universal](LICENSE) — public domain dedication.
