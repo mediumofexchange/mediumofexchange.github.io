@@ -233,7 +233,7 @@ footer a { color: var(--muted); }
   </li>
   <li>
     <a class="t" href="https://github.com/mediumofexchange/money-from-first-principles/blob/main/extensions.md">Extensions<span class="tag">profiles</span></a>
-    <span class="d">What need builds on the core &mdash; triggers, pro-rata, references, unitload, cross-operator presentation, offline payment &mdash; and the claim-layer profiles that replace the pool: transparent, accumulator, Chaumian. Each with the need that summons it and the price it charges.</span>
+    <span class="d">What need builds on the core &mdash; triggers, pro-rata, references, unitload, cross-operator presentation, offline payment &mdash; and the claim-layer profiles a backing can declare instead of the pool: transparent, accumulator, Chaumian. Each with the need that summons it and the price it charges.</span>
   </li>
 </ul>
 
@@ -243,11 +243,12 @@ footer a { color: var(--muted); }
 <ul class="docs">
   <li>
     <a class="t" href="https://github.com/mediumofexchange/reference-ts">reference-ts<span class="tag">typescript</span></a>
-    <span class="d">The experimental shielded-pool implementation: private notes, public supply replay, canonical history, receipt readers and durable sequencing. Pool-v3 is adopted with one configuration; single-backing recovery, a seed-restorable wallet, multi-backing operator pools and Ergo publication run on reference venues and the testnet. Statements spending several backings and a released deployment remain.</span>
+    <span class="d">The experimental implementation. The shielded pool (pool-v3): private notes, public supply replay, canonical history, receipt readers, durable sequencing and single-backing recovery, published on Ergo. Lit notes (<code>moe/lit/v1</code>), the transparent profile, meant for links that carry only tiny packets. Both are adopted by name. Statements spending several backings, a phone-first wallet, qualified deployment storage and mainnet remain.</span>
   </li>
 </ul>
-<p class="note">Build from source using the <a href="https://github.com/mediumofexchange/reference-ts#readme">setup and verification instructions</a>. The package is not published to npm. Its <a href="https://github.com/mediumofexchange/reference-ts/blob/main/docs/POOL_V3_WALLET.md#commands"><code>moe</code> commands</a> run the wallet, operator, supply reader and relay on a synthetic local chain and live on the Ergo testnet.</p>
-<p class="warn">The reference implementation is experimental. The API and wire format can change, and there has been no completed security audit.</p>
+<p class="note">Its <a href="https://github.com/mediumofexchange/reference-ts/blob/main/docs/POOL_V3_WALLET.md#commands"><code>moe</code> commands</a> run a wallet, an operator, a supply reader, a replica and a relay, each from its own install of the package, with real proofs on a synthetic Ergo chain; the pool&rsquo;s commands have also run live on the Ergo testnet. A wallet restores its holdings from its seed alone. A holder reaches a remote operator as a Tor onion service, reads a replica while the operator is down, and has a relay publish its acts while the operator is silent.</p>
+<p class="note">Build from source using the <a href="https://github.com/mediumofexchange/reference-ts#readme">setup and verification instructions</a>, or rebuild the package tarball byte for byte as its <a href="https://github.com/mediumofexchange/reference-ts/blob/main/docs/RELEASE.md">release record</a> describes. The package is not published to npm. The <a href="https://github.com/mediumofexchange/reference-ts/blob/main/docs/SECURITY_ARGUMENT.md">security argument</a> states what a release claims and what each claim assumes, for an external review to check.</p>
+<p class="warn">The reference implementation is experimental and refuses mainnet. Its API can change, its adopted formats change only as new versions with no migration promised, and there has been no completed security audit.</p>
 
 <hr>
 
